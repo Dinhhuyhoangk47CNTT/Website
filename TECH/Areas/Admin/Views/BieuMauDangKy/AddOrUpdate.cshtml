@@ -1,0 +1,50 @@
+﻿@{
+    Layout = null;
+}
+
+<div id="AddOrUpdateModal" tabindex="-1" aria-labelledby="feeModalTitle" class="modal fade" aria-modal="true" role="dialog">
+    <div role="document" class="modal-dialog modal-lg">
+        <form id="form-submit" action="#" method="#">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <h5 id="titleModal" class="modal-title white">Thêm mới form đăng ký</h5>
+                    <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group has-icon-left">
+                                <label for="email-id-icon">Tiêu đề</label>
+                                <div class="position-relative">
+                                    <input type="text" placeholder="" id="TieuDe" name="TieuDe" class="form-control custom-format">
+                                </div>
+                                <!---->
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group has-icon-left">
+                                <label for="email-id-icon">Nội dung</label>
+                                <div class="position-relative">
+                                    <textarea id="NoiDung" name="NoiDung" class="form-control custom-format"></textarea>
+                                </div>
+                                <!---->
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group has-icon-left">
+                                <label for="email-id-icon">Ngày hết hạn</label>
+                                <div class="position-relative">
+                                    <input type="text" placeholder="" id="NgayHetHan" name="NgayHetHan" class="form-control custom-format formatdate">
+                                    <div class="form-control-icon custom-icon"><i class="fa-solid fa-calendar-days"></i></div>
+                                </div>
+                                <!---->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button type="submit" class="btn btn-primary me-1 mb-1 btn-submit-format">Thêm mới</button></div>
+            </div>
+        </form>
+    </div>
+</div>

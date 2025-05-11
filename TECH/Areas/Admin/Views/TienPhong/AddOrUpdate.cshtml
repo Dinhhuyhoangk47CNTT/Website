@@ -1,0 +1,132 @@
+﻿@{
+    Layout = null;
+}
+
+<div id="AddOrUpdateModal" tabindex="-1" aria-labelledby="feeModalTitle" class="modal fade" aria-modal="true" role="dialog">
+    <div role="document" class="modal-dialog modal-lg">
+        <form id="form-submit" action="#" method="#">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <h5 id="titleModal" class="modal-title white">Thêm mới tiền phòng</h5>
+                    <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group has-icon-left">
+                                <label for="password-id-icon">Toà nhà</label>
+                                <div class="position-relative">
+                                    <select class="form-select select" id="MaNha" name="MaNha" onchange="GetPhongByNha(this)">
+                                    </select>
+                                </div>
+                                <!---->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group has-icon-left">
+                                <label for="email-id-icon">Giá tiền phòng/tháng</label>
+                                <div class="position-relative">
+                                    <input type="number" placeholder="" id="GiaPhong" name="GiaPhong" class="form-control custom-format">
+                                </div>
+                                <!---->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group has-icon-left">
+                                <label for="email-id-icon">Ngày nộp</label>
+                                <div class="position-relative">
+                                    <input type="text" placeholder="" id="NgayNop" name="NgayNop" class="form-control custom-format formatdate">
+                                    <div class="form-control-icon custom-icon"><i class="fa-solid fa-calendar-days"></i></div>
+                                </div>
+                                <!---->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group has-icon-left">
+                                <label for="password-id-icon">Số phòng</label>
+                                <div class="position-relative">
+                                    <select class="form-select select" id="MaPhong" name="MaPhong" onchange="GetThongTinPhong(this)">
+                                    </select>
+                                </div>
+                                <!---->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group has-icon-left">
+                                <label for="email-id-icon">Số tiền cần nộp</label>
+                                <div class="position-relative">
+                                    <input type="number" placeholder="" id="SoTienCanNop" name="SoTienCanNop" class="form-control custom-format">
+                                </div>
+                                <!---->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group has-icon-left">
+                                <label for="email-id-icon">Năm học</label>
+                                <div class="position-relative">
+                                    <input type="text" placeholder="" id="NamHoc" name="NamHoc" class="form-control custom-format">
+                                </div>
+                                <!---->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group has-icon-left">
+                                <label for="password-id-icon">Loại phòng</label>
+                                <div class="position-relative">
+                                    <select class="form-select select" id="LoaiPhong" name="LoaiPhong">
+                                        <option value="">Chọn loại phòng</option>
+                                        <option value="2">Nam</option>
+                                        <option value="3">Nữ</option>
+                                    </select>
+                                </div>
+                                <!---->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group has-icon-left">
+                                <label for="email-id-icon">Số tiền đã nộp</label>
+                                <div class="position-relative">
+                                    <input type="number" placeholder="" id="SoTienDaNop" name="SoTienDaNop" class="form-control custom-format">
+                                </div>
+                                <!---->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group has-icon-left">
+                                <label for="email-id-icon">Học kỳ</label>
+                                <div class="position-relative">
+                                    <input type="text" placeholder="" id="HocKy" name="HocKy" class="form-control custom-format">
+                                </div>
+                                <!---->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group has-icon-left">
+                                <label for="email-id-icon">Hạn nộp</label>
+                                <div class="position-relative">
+                                    <input type="text" placeholder="" id="HanNop" name="HanNop" class="form-control custom-format formatdate">
+                                    <div class="form-control-icon custom-icon"><i class="fa-solid fa-calendar-days"></i></div>
+                                </div>
+                                <!---->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group has-icon-left">
+                                <label for="password-id-icon">Trạng thái</label>
+                                <div class="position-relative">
+                                    <select class="form-select select" id="TrangThai" name="TrangThai">
+                                        <option value="">Chọn trạng thái</option>
+                                        <option value="DA_NOP">Đã nộp</option>
+                                        <option value="CHUA_NOP">Chưa nộp</option>
+                                    </select>
+                                </div>
+                                <!---->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button type="submit" class="btn btn-primary me-1 mb-1 btn-submit-format">Thêm mới</button></div>
+            </div>
+        </form>
+    </div>
+</div>

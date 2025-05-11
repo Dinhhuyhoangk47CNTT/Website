@@ -1,0 +1,142 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+	.breadandfilter {
+        display: inline-block;
+        background: #f7f7f7;
+        border: 1px solid #ececec;
+        margin-top: 10px;
+        width: 100%;
+        margin-bottom: 20px;
+}
+
+    ul.breadcrumbcus {
+        float: left;
+        margin: 0;
+        padding: 6px 0 0;
+        position: relative;
+        z-index: 9;
+    }
+    .breadcrumbcus li {
+    float: left;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+    li {
+        list-style: none;
+    }
+    .breadcrumbcus li:first-child a {
+    padding-left: 10px;
+}
+
+    .breadcrumbcus li a {
+        float: left;
+        font-size: 14px;
+        padding: 5px 5px 10px;
+    }
+
+    .breadcrumbcus span {
+        float: left;
+        line-height: 1;
+    }
+    .rowbr {
+    padding-top: 5px;
+}
+.breadcrumbcus h2 {
+    padding-top: 0;
+    padding-left: 3px;
+    font-size: 14px;
+    color: #e77e24;
+}
+</style>
+<section class="ftco-section" style="min-height: 70vh;">
+    <div class="container">
+        <div class="breadandfilter">
+            <ul class="breadcrumbcus" itemscope="" itemtype="">
+                <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                    <a href="/" title="Trang chủ" itemprop="item"><span itemprop="name">Trang chủ</span></a>
+                    <meta itemprop="position" content="1" /><span class="rowbr">›</span>
+                </li>
+                <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                    <a href="/chinh-sach-bao-mat" title="Giới thiệu" itemprop="item">
+                        <h2><span itemprop="name">Chính sách bảo mật</span></h2>
+                    </a>
+                    <meta itemprop="position" content="2" />
+                </li>
+            </ul>
+        </div>
+        <div class="clear10"></div>
+        <div class="cssdetail">
+            <h2 style="text-align: center;">
+                <strong><span>CHÍNH SÁCH BẢO MẬT THÔNG TIN KHÁCH HÀNG</span></strong>
+            </h2>
+        </div>
+        <div class="image-banner" style="text-align: center;">
+            <img src="/image-default/chinh-sach-bao-mat.png" style="width:90%"/>
+        </div>
+
+        <h2 id="Bo-suu-tap-giay-the-thao-da-dang-tai-TuloShop" class="ftoc">1. Mục đích thu thập các thông tin cá nhân</h2>
+        <p>Các thông tin được thu thập thông qua các hệ thống website sẽ giúp chúng tôi:</p>
+        <ul>
+            <li>•	Trợ giúp khách hàng khi có nhu cầu tìm hiểu và thuê trọ.</li>
+            <li>•	Hỗ trợ giải đáp những câu hỏi thường gặp của người dùng.</li>
+            <li>•	Cung ứng cho người mua những thông báo và các chương trình kh mới.</li>
+            <li>•	Xem xét và xây dựng kế hoạch nâng cấp nội dung, giao diện của Website phù hợp với người dùng.</li>
+            <li>•	Thực hiện các hoạt động khảo sát khách hàng với mục tiêu hoàn thiện và các dịch vụ kèm theo.</li>
+            <li>•	Thực hiện những hoạt động marketing liên quan đến phòng trọ và dịch vụ .</li>
+        </ul>
+        <p style="text-align: justify">
+            Để truy cập và sử dụng các dịch vụ của chúng tôi, quý khách sẽ được yêu cầu đăng ký thông tin cá nhân (Email, Họ tên, Số ĐT liên lạc…). Mọi thông tin được cung cấp phải đảm bảo tính xác thực và hợp pháp. Chúng tôi không chịu trách nhiệm liên quan đến luật pháp và những thông tin khai báo do quý khách hàng cung cấp. 
+Chúng tôi có thể thu thập một số thông tin về số lần truy cập website. Thông tin bao gồm số trang quý khách xem, số links (liên kết) được truy cập và các thông tin khác liên quan đến việc kết nối đến website này. Chúng tôi cũng thu thập các thông tin mà trình duyệt Web (Browser) quý khách đã sử dụng để cập vào website, bao gồm: địa chỉ IP, loại Browser, ngôn ngữ người dùng, thời gian và các địa chỉ mà Browser truy xuất xuất đến.
+
+        </p>
+
+        <h2 id="Ve-thuong-hieu-giay" class="ftoc">2. Phạm vi sử dụng thông tin</h2>
+        <p>Tất cả những thông tin cá nhân thu thập được sử dụng cho một hoặc những mục đích sau đây:</p>
+
+        <ul>
+            <li>•	Trợ giúp người dùng.</li>
+            <li>•	Hỗ trợ giải đáp những câu hỏi thường gặp của người dùng.</li>
+            <li>•	Xử lý đơn đặt phòng và các chương trình khuyến mãi</li>
+            <li>•	Bên cạnh đó, chúng tôi sẽ sử dụng những thông tin mà khách hàng cung cấp để hỗ trợ khách hàng quản lý tài khoản cá nhân; xác nhận và thực hiện các thương lượng về vốn đầu tư có liên quan đến những khoản thanh toán trực tuyến của người dùng.</li>            
+        </ul>
+
+         <h2 id="Bo-suu-tap-giay-the-thao-da-dang-tai-TuloShop" class="ftoc">3. Thời gian lưu trữ thông tin</h2>
+
+          <p style="text-align: justify">
+          Chúng tôi sẽ tiến hành các hoạt động lưu trữ những thông tin cá nhân do quý khách cung cấp trên các cổng thông tin nội bộ của chúng tôi trong quá trình cung cấp dịch vụ hoặc cho đến lúc hoàn thành mục đích thu thập thông tin. Ở trường hợp khác, các thông tin của quý khách sẽ được hủy khi người mua đưa ra yêu cầu hủy những thông tin đã cung cấp cho chúng tôi.
+
+        </p>
+
+        <h2 id="Bo-suu-tap-giay-the-thao-da-dang-tai-TuloShop" class="ftoc">4. Địa chỉ doanh nghiệp thu thập và quản lý các thông tin cá nhân của khách hàng</h2>
+        <p>Đây là Website thương mại điện tử của Vietnamdigitalsignage.com</p>
+        <p>Đơn vị chủ quản: Quách Hải Âu</p>
+        <p>Địa chỉ: 49A- Phường 5- Đường 3/2 - Thành Phố Cà Mau</p>
+        <p>Hotline : 0346 732 288</p>
+        <p>Website : https://vietnamdigitalsignage.com</p>
+        <p>Email : quachhaiau@gmail.com</p>
+        <h2 id="Bo-suu-tap-giay-the-thao-da-dang-tai-TuloShop" class="ftoc">5. Công cụ và phương tiện để người dùng có thể tiếp cận và chỉnh sửa dữ liệu cá nhân</h2>
+        <p>Khách hàng có thể liên hệ với chúng tôi qua email quachhaiau@gmail.com để được tiếp cận, xóa bỏ và (hoặc) cập nhật dữ liệu cá nhân.</p>
+        <h2 id="Bo-suu-tap-giay-the-thao-da-dang-tai-TuloShop" class="ftoc">6. Cam kết bảo mật thông tin cá nhân của khách hàng</h2>
+        <p style="text-align: justify">Chúng tôi sở hữu những phương pháp kỹ thuật và an ninh để ngăn chặn truy cập trái phép hoặc trái pháp luật gây tổn thất thông tin cá nhân của quý khách. Khi thu thập dữ liệu trên website, chúng tôi thu thập các thông tin cá nhân của khách hàng trên máy chủ và lưu trữ an toàn. Chúng tôi sử dụng hệ thống tường lửa cho máy chủ. Khi thu thập thông tin về thẻ thanh toán điện tử, chúng tôi mã hóa bằng Secure Socket Layer (SSL). Chúng tôi không thể bảo đảm an ninh 100%, SSL sẽ gây khó khăn cho hacker khi tiến hành mã hóa thông tin cá nhân của khách hàng.</p>
+        <p style="text-align: justify">Khách hàng không nên gửi đầy đủ và các thông tin chi tiết của của thẻ tín dụng hay thẻ ghi nợ khi chưa được mã hóa cho chúng tôi. Chúng tôi luôn duy trì những biện pháp bảo vệ vật lý và điện tử trong mối liên kết chặt chẽ giữa các hoạt động thu thập, lưu trữ thông tin cá nhân của bạn. Đôi khi chúng tôi có thể yêu cầu xuất trình chứng minh hoặc các thông tin liên quan trước khi tiết lộ thông tin cá nhân cho quý khách.
+Trong trường hợp máy chủ lưu trữ thông tin bị hacker tấn công dẫn tới thất thoát, rò rỉ dữ liệu cá nhân của khách hàng, chúng tôi sẽ có trách nhiệm thông báo vụ việc cho cơ quan chức năng tiến hành các hoạt động điều tra, truy vết nhằm xử lý kịp thời và thông báo cho khách hàng được biết.
+        </p>
+        <p style="text-align: justify">Chúng tôi sẽ bảo mật tuyệt đối mọi thông tin giao dịch trực tuyến của Thành Viên bao gồm thông tin hóa đơn kế toán, chứng từ số hóa tại khu vực dữ liệu trung tâm an toàn nhất .</p>
+        <p style="text-align: justify">Chúng tôi khuyến cáo quý khách không nên cung cấp những thông tin chi tiết về việc thanh toán với bất kì ai dưới hình thức email. Chúng tôi không chịu trách nhiệm về những tổn thất mà quý khách có thể gánh chịu trong việc trao đổi thông tin cá nhân, thông tin giao dịch của quý khách qua internet hoặc email.</p>
+        <p style="text-align: justify">Khách hàng tuyệt đối không dùng bất kỳ chương trình, công cụ hay hình thức nào khác để can thiệp vào hệ thống làm thay đổi cấu trúc dữ liệu. Nghiêm cấm việc phát tán, lăng xê hay cổ vũ cho bất kỳ hoạt động nào nhằm can thiệp, phá hoại hay xâm nhập vào dữ liệu của hệ thống website. Mọi vi phạm sẽ bị tước bỏ mọi quyền lợi cũng như sẽ bị khởi tố trước pháp luật khi cần thiết.</p>
+        <p style="text-align: justify">Mọi thông tin giao dịch của quý khách sẽ được bảo mật nhưng trong trường hợp cơ quan luật pháp yêu cầu, chúng tôi buộc phải cung cấp những thông tin này cho các cơ quan pháp luật.</p>
+        <p style="text-align: justify">Các điều kiện, điều khoản và nội dung của trang web này được điều chỉnh bởi pháp luật Việt Nam và tòa án Việt Nam có thẩm quyền xem xét.</p>
+        <h2 id="Bo-suu-tap-giay-the-thao-da-dang-tai-TuloShop" class="ftoc">7. Thay đổi các chính sách bảo mật</h2>
+        <p style="text-align: justify">Chúng tôi có quyền sửa đổi, bổ sung Chính sách bảo mật này vào bất kỳ thời điểm nào được cho là cần thiết mà không có nghĩa vụ phải thông báo trên website, thông tin trên các phương tiện thông tin đại chúng khác hoặc thông báo trực tiếp đến quý khách Internet về thời điểm sửa đổi, bổ sung; thời điểm sửa đổi, bổ sung bản Chính sách bảo mật sẽ được ghi rõ trên phần đầu của Chính sách bảo mật để người dùng có thể xác định được.
+Người sử dụng Internet sử dụng website tại thời điểm nào chịu sự ràng buộc về mặt pháp lý với bản sửa đổi, bổ sung tại thời điểm đó; chúng tôi sẽ luôn cập nhật Chính sách bảo mật mới nhất trên website.
+</p>
+<p style="text-align: justify">Mỗi lần truy cập website, người dùng Internet chịu trách nhiệm tự kiểm tra về các sửa đổi, bổ sung Chính sách bảo mật thông qua sự rà soát tại thời điểm sửa đổi, bổ sung được ghi trên phần đầu bản Chính sách bảo mật. Bản Chính sách bảo mật sửa đổi, bổ sung có hiệu lực ngay khi được cập nhật trên website.</p>
+    </div>
+</section>
+
+
+

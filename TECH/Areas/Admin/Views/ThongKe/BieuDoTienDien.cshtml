@@ -1,0 +1,77 @@
+﻿@using TECH.Areas.Admin.Models
+@model HomeModelView
+@{
+    ViewData["Title"] = "Biểu đồ tiền điện";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    var BieuDoData = ViewData["BieuDo"];
+}
+
+<style>
+    .apexcharts-legend.apexcharts-align-center.position-bottom {
+        display: none;
+    }
+</style>
+<div class="page-heading">
+    <h3>Biểu đồ tiền điện</h3>
+</div>
+<div class="page-content">
+    <section>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h4>Biểu đồ thống kê tiền điện các tháng</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <canvas id="chart"></canvas>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+             let salesData = @Html.Raw(BieuDoData); // Chèn dữ liệu từ ViewData vào JavaScript
+             let labels = salesData.map(item => item.Thang);
+             let salesValues = salesData.map(item => item.Value);
+
+             let ctx = document.getElementById('chart').getContext('2d');
+             let salesChart = new Chart(ctx, {
+                 type: 'bar',
+                 data: {
+                     labels: labels,
+                     datasets: [{
+                         label: 'Biểu đồ thu tiền điện theo tháng',
+                         data: salesValues,
+                         backgroundColor: 'rgba(54, 162, 235, 0.6)',
+                         borderColor: 'rgba(54, 162, 235, 1)',
+                         borderWidth: 1
+                     }]
+                 },
+                 options: {
+                     responsive: true,
+                     scales: {
+                         y: {
+                             beginAtZero: true
+                         }
+                     }
+                 }
+             });
+         });
+    </script>
+}
+
+

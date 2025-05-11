@@ -1,0 +1,33 @@
+﻿@using TECH.Areas.Admin.Models
+@using Website.Areas.Admin.Models;
+@model VanBanViewModel
+@{
+    ViewData["Title"] = "Thông báo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    
+</style>
+<section>
+    <div class="container">
+        <div class="breadcum">
+            <ul>
+                <li><a title="" href="/">Trang chủ</a></li>/
+                <li><a href="/ThongBao">Thông báo</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <span style="font-size:13pt;color:dodgerblue;font-weight:bold;">@Model.TieuDe</span>
+            </div>
+            <div class="col-md-12">
+                <hr />
+            </div>
+            <div class="col-md-12">
+                <span style="font-size:13pt;color:dodgerblue;font-weight:bold;">@Html.Raw(Model.NoiDung)</span>
+            </div>
+        </div>
+    </div>
+</section>
+

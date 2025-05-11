@@ -1,0 +1,46 @@
+﻿@using TECH.Areas.Admin.Models
+@using Website.Areas.Admin.Models;
+@model IEnumerable<VanBanViewModel>
+@{
+    ViewData["Title"] = "Thông Báo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    
+</style>
+<section>
+    <div class="container">
+        <div class="breadcum">
+            <ul>
+                <li><a title="" href="/">Trang chủ</a></li>/
+                <li><a href="/ThongBao">Thông báo</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <ul>
+                    @foreach (var item in Model)
+                    {
+                        <li>
+                            <a href="@Url.Action("View", "ThongBao", new { Id = item.Id })" >
+                                <span style="font-size:13pt;color:dodgerblue;font-weight:bold;">@item.TieuDe</span>
+                                (
+                                @if (item.NgayHetHan < DateTime.Now)
+                                {
+                                    <span style="color:red;font-size:13pt;font-weight:bold;">Đã hết hạn</span>
+                                    <span style="font-size:13pt;color:lightgray; font-weight:bold;">@item.NgayHetHanStr</span>
+                                } else
+                                {
+                                    <span style="font-size:13pt;color:lightgray;font-weight:bold;">@item.NgayHetHanStr</span>
+                                }
+                                )
+                            </a>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+

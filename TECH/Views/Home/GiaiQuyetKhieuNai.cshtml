@@ -1,0 +1,96 @@
+﻿
+@{
+    ViewData["Title"] = "GiaiQuyetKhieuNai";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .breadandfilter {
+        display: inline-block;
+        background: #f7f7f7;
+        border: 1px solid #ececec;
+        margin-top: 10px;
+        width: 100%;
+        margin-bottom: 20px;
+}
+
+    ul.breadcrumbcus {
+        float: left;
+        margin: 0;
+        padding: 6px 0 0;
+        position: relative;
+        z-index: 9;
+    }
+    .breadcrumbcus li {
+    float: left;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+    li {
+        list-style: none;
+    }
+    .breadcrumbcus li:first-child a {
+    padding-left: 10px;
+}
+
+    .breadcrumbcus li a {
+        float: left;
+        font-size: 14px;
+        padding: 5px 5px 10px;
+    }
+
+    .breadcrumbcus span {
+        float: left;
+        line-height: 1;
+    }
+    .rowbr {
+    padding-top: 5px;
+}
+.breadcrumbcus h2 {
+    padding-top: 0;
+    padding-left: 3px;
+    font-size: 14px;
+    color: #e77e24;
+}
+</style>
+<section class="ftco-section" style="min-height: 70vh;">
+    <div class="container">
+        <div class="breadandfilter">
+            <ul class="breadcrumbcus" itemscope="" itemtype="">
+                <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                    <a href="/" title="Trang chủ" itemprop="item"><span itemprop="name">Trang chủ</span></a>
+                    <meta itemprop="position" content="1" /><span class="rowbr">›</span>
+                </li>
+                <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                    <a href="/giai-quyet-khieu-nai" title="Giới thiệu" itemprop="item">
+                        <h2><span itemprop="name">Giải quyết khiếu nại</span></h2>
+                    </a>
+                    <meta itemprop="position" content="2" />
+                </li>
+            </ul>
+        </div>
+        <div class="clear10"></div>
+        <div class="cssdetail">
+            <h2 style="text-align: center;">
+                <strong><span>GIẢI QUYẾT MỌi KHIẾU NẠI</span></strong>
+            </h2>
+        </div>
+
+        <p style="text-align: justify">Qua Số điiện thoại: 0346732288</p>
+        <p style="text-align: justify">Email: quaacshhaiau@gmail.com</p>
+        <p style="text-align: justify">Qua ZaLo: https://id.zalo.me/account?continue=https%3A%2F%2Fchat.zalo.me%2F</p>
+        <p style="text-align: justify">Qua Facebook:https://www.facebook.com</p>
+        <p style="text-align: justify">Đại chỉ:  Số 9A - Hùng Vương - Phường 5- Thành Phố - Cà Mau</p>
+
+    </div>
+</section>
+
+
+
+
+
